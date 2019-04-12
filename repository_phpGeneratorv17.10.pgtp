@@ -1,0 +1,1907 @@
+<Project colorSchemeName="cerulean" copySystemFiles="true" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PostgreSQL PHP Generator Professional v17.10\lang.es.php" outputFilesExtension="php" outputPath="C:\xampp\htdocs\repositoryv17.10" phpDriver="0" version="17.10.0.1" productVersion="17.10.0.1">
+  <DataSources>
+    <DataSource name="public.categoria"/>
+    <DataSource name="public.evaluacion"/>
+    <DataSource name="public.evaluadores"/>
+    <DataSource name="public.ferias"/>
+    <DataSource name="public.ganadores_feria"/>
+    <DataSource name="public.proyectos"/>
+    <DataSource name="public.puestos"/>
+    <DataSource name="public.user_student"/>
+    <DataSource name="public.asignar_proyecto_docente"/>
+  </DataSources>
+  <Presentation disableMagicQuotesRuntime="false" menuMode="1" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
+    <Pages>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Ferias" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" editAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="ferias" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" pageViewMode="1" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Ferias" showKeyColumnsImagesInGridHeader="false" tableName="public.ferias" type="table" useActionImages="true" viewAbilityMode="0">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="Nombre Feria" fieldName="nombre_feria" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Fecha" fieldName="fecha" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime"/>
+            <EditProperties dateTimeFormat="Y-m-d " firstDayOfWeek="0" type="dateTime"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Periodo" fieldName="periodo" headerHint="Periodo en el año, I o II " selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="ID" fieldName="id_feria" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria" visible="false"/>
+          </List>
+          <View>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria" visible="false"/>
+          </View>
+          <Edit>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria" visible="false"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria" visible="false"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="nombre_feria"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria"/>
+          </Print>
+          <Export>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria"/>
+          </Export>
+          <Compare>
+            <Column fieldName="nombre_feria"/>
+            <Column fieldName="fecha"/>
+            <Column fieldName="periodo"/>
+            <Column fieldName="id_feria" visible="false"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Proyectos">
+            <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Proyectos" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="proyectos" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Proyectos" showKeyColumnsImagesInGridHeader="false" tableName="public.proyectos" type="table" useActionImages="true">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Nombre Proyecto" fieldName="nombre_proyecto" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Descripcion" fieldName="descripcion" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Fecha Publicacion" fieldName="fecha_publicacion" selectedFilterOperators="2031871">
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties dateTimeFormat="Y-m-d h:i:s a" firstDayOfWeek="0" type="dateTime"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id Categoria" fieldName="id_categoria" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="descripcion" linkFieldName="id_categoria" lookupFilter="" lookupOrdering="0" tableName="public.categoria" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Doc" fieldName="url_doc" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Video" fieldName="url_video" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Anexos" fieldName="url_anexos" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Feria" fieldName="id_feria" selectedFilterOperators="2031871">
+                  <Lookup displayFieldName="fecha" linkFieldName="id_feria" lookupFilter="" lookupOrdering="0" tableName="public.ferias" useLookupOrdering="true"/>
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id User" fieldName="id_user" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="user_nombres" linkFieldName="id_user" lookupFilter="" lookupOrdering="0" tableName="public.user_student" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </List>
+                <View>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_feria" masterColumnName="id_feria"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Proyectos" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="proyectos" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="1" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Proyectos" showKeyColumnsImagesInGridHeader="false" tableName="public.proyectos" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Nombre Proyecto" fieldName="nombre_proyecto" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties maxLength="100" type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Descripción" fieldName="descripcion" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties maxLength="250" type="text">
+              <DivAttributes align="left"/>
+            </ViewProperties>
+            <EditProperties type="htmlWysiwyg"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Fecha Presentación" fieldName="fecha_publicacion" selectedFilterOperators="2031871">
+            <ViewProperties dateTimeFormat="Y-m-d " type="dateTime"/>
+            <EditProperties dateTimeFormat="Y-m-d" firstDayOfWeek="0" type="dateTime"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Feria" fieldName="id_feria" selectedFilterOperators="1573119">
+            <Lookup displayFieldName="nombre_feria" linkFieldName="id_feria" lookupFilter="" lookupOrdering="0" tableName="public.ferias" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties itemTemplate="%nombre_feria% - %fecha% - %periodo%" numberOfValuesToDisplay="25" type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Categoría" fieldName="id_categoria" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="descripcion" linkFieldName="id_categoria" lookupFilter="" lookupOrdering="0" tableName="public.categoria" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Cargar Documento" fieldName="url_doc" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties directoryToUpload="documentos/" fileNameTemplate="%original_file_name%" generateRandomFileName="true" replaceFilesIfExists="true" type="fileUploadToFolder"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="URL Video" fieldName="url_video" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties maxLength="50" type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+            <Validators>
+              <UrlClientValidatorInfo enabled="true"/>
+            </Validators>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Cargar Anexos" fieldName="url_anexos" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties directoryToUpload="anexos/" fileNameTemplate="%original_file_name%" generateRandomFileName="false" replaceFilesIfExists="true" type="fileUploadToFolder"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Id User" defaultInsertValue="%CURRENT_USER_ID%" fieldName="id_user" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="user_nombres" linkFieldName="id_user" lookupFilter="" lookupOrdering="0" tableName="public.user_student" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </List>
+          <View>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_proyecto" visible="false"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_proyecto" visible="false"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_user"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_proyecto" visible="false"/>
+            <Column fieldName="nombre_proyecto"/>
+            <Column fieldName="descripcion"/>
+            <Column fieldName="fecha_publicacion"/>
+            <Column fieldName="id_feria"/>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="url_doc"/>
+            <Column fieldName="url_video"/>
+            <Column fieldName="url_anexos"/>
+            <Column fieldName="id_user"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Evaluacion">
+            <Page NavigatorPosition="3" addSeparator="false" caption="Evaluacion" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="evaluacion" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Evaluacion" showKeyColumnsImagesInGridHeader="false" tableName="public.evaluacion" type="table" useActionImages="true" viewAbilityMode="0">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation canSetNull="true" caption="Presentacion" fieldName="presentacion" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id Evaluador" fieldName="id_evaluador" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_eva" linkFieldName="id_evaluador" lookupFilter="" lookupOrdering="0" tableName="public.evaluadores" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Evaluacion" fieldName="id_evaluacion" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Tiempo" fieldName="tiempo" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Coherencia Met" fieldName="coherencia_met" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Claridad" fieldName="claridad" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Diapositiva" fieldName="diapositiva" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Video" fieldName="video" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Conclusiones" fieldName="conclusiones" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </List>
+                <View>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </View>
+                <Edit>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Print>
+                <Export>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_proyecto" masterColumnName="id_proyecto"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+          <Detail caption="Ganadores Feria">
+            <Page NavigatorPosition="3" addSeparator="false" caption="Ganadores Feria" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="ganadores_feria" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Ganadores Feria" showKeyColumnsImagesInGridHeader="false" tableName="public.ganadores_feria" type="table" useActionImages="true" viewAbilityMode="0">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Puestos" fieldName="id_puestos" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="puesto" linkFieldName="id_puestos" lookupFilter="" lookupOrdering="0" tableName="public.puestos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </List>
+                <View>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_proyecto" masterColumnName="id_proyecto"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <EventHandlers>
+          <OnGetCustomFormLayout enabled="true">
+$layout-&gt;setMode(FormLayoutMode::VERTICAL);
+        
+$displayGroup = $layout-&gt;addGroup('Datos del Proyecto',12);
+
+$displayGroup-&gt;addRow()-&gt;addCol($columns['nombre_proyecto'],4)-&gt;addCol($columns['id_categoria'],4)-&gt;addCol($columns['id_feria'],4);
+$displayGroup-&gt;addRow()-&gt;addCol($columns['descripcion'],12);
+$displayGroup-&gt;addRow()-&gt;addCol($columns['fecha_publicacion'],6)-&gt;addCol($columns['url_video'],6);
+$displayGroup-&gt;addRow()-&gt;addCol($columns['url_doc'],6)-&gt;addCol($columns['url_anexos'],6);          </OnGetCustomFormLayout>
+          <BeforeInsertRecord enabled="true">
+$rowData['id_user']=$this-&gt;GetEnvVar('CURRENT_USER_ID');          </BeforeInsertRecord>
+          <OnInsertFormLoaded enabled="true">
+editors['id_user'].visible(false);          </OnInsertFormLoaded>
+        </EventHandlers>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Categoría" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="categoria" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Categoría" showKeyColumnsImagesInGridHeader="false" tableName="public.categoria" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="ID Categoria" fieldName="id_categoria" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Descripción" fieldName="descripcion" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </List>
+          <View>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_categoria" visible="false"/>
+            <Column fieldName="descripcion"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_categoria" visible="false"/>
+            <Column fieldName="descripcion"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_categoria"/>
+            <Column fieldName="descripcion"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_categoria" visible="false"/>
+            <Column fieldName="descripcion"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Proyectos">
+            <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Proyectos" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="proyectos" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Proyectos" showKeyColumnsImagesInGridHeader="false" tableName="public.proyectos" type="table" useActionImages="true">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Nombre Proyecto" fieldName="nombre_proyecto" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Descripcion" fieldName="descripcion" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Fecha Publicacion" fieldName="fecha_publicacion" selectedFilterOperators="2031871">
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties dateTimeFormat="Y-m-d h:i:s a" firstDayOfWeek="0" type="dateTime"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id Categoria" fieldName="id_categoria" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="descripcion" linkFieldName="id_categoria" lookupFilter="" lookupOrdering="0" tableName="public.categoria" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Doc" fieldName="url_doc" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Video" fieldName="url_video" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Anexos" fieldName="url_anexos" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Feria" fieldName="id_feria" selectedFilterOperators="2031871">
+                  <Lookup displayFieldName="fecha" linkFieldName="id_feria" lookupFilter="" lookupOrdering="0" tableName="public.ferias" useLookupOrdering="true"/>
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id User" fieldName="id_user" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="user_nombres" linkFieldName="id_user" lookupFilter="" lookupOrdering="0" tableName="public.user_student" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </List>
+                <View>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_categoria" masterColumnName="id_categoria"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Docentes" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="evaluadores" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Docentes" showKeyColumnsImagesInGridHeader="false" tableName="public.evaluadores" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="ID Evaluador" fieldName="id_evaluador" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Nombre Evaluador" fieldName="nombre_eva" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Password" fieldName="password" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </List>
+          <View>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="nombre_eva"/>
+            <Column fieldName="password"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Evaluacion">
+            <Page NavigatorPosition="3" addSeparator="false" caption="Evaluacion" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="evaluacion" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Evaluacion" showKeyColumnsImagesInGridHeader="false" tableName="public.evaluacion" type="table" useActionImages="true" viewAbilityMode="0">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation canSetNull="true" caption="Presentacion" fieldName="presentacion" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id Evaluador" fieldName="id_evaluador" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_eva" linkFieldName="id_evaluador" lookupFilter="" lookupOrdering="0" tableName="public.evaluadores" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Evaluacion" fieldName="id_evaluacion" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Tiempo" fieldName="tiempo" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Coherencia Met" fieldName="coherencia_met" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Claridad" fieldName="claridad" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Diapositiva" fieldName="diapositiva" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Video" fieldName="video" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Conclusiones" fieldName="conclusiones" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </List>
+                <View>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </View>
+                <Edit>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Print>
+                <Export>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="presentacion"/>
+                  <Column fieldName="id_evaluador"/>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_evaluacion"/>
+                  <Column fieldName="tiempo"/>
+                  <Column fieldName="coherencia_met"/>
+                  <Column fieldName="claridad"/>
+                  <Column fieldName="diapositiva"/>
+                  <Column fieldName="video"/>
+                  <Column fieldName="conclusiones"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_evaluador" masterColumnName="id_evaluador"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Asignar Proyecto Docente" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="asignar_proyecto_docente" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Asignar Proyecto " showKeyColumnsImagesInGridHeader="false" tableName="public.asignar_proyecto_docente" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="Id Adinacion" fieldName="id_adinacion" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Evaluador" fieldName="id_evaluador" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="nombre_eva" linkFieldName="id_evaluador" lookupFilter="" lookupOrdering="0" tableName="public.evaluadores" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Estado" fieldName="estado" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_adinacion" visible="false"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado" visible="false"/>
+          </List>
+          <View>
+            <Column fieldName="id_adinacion" visible="false"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado" visible="false"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_adinacion" visible="false"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado" visible="false"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_adinacion" visible="false"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado" visible="false"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_adinacion"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_adinacion"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_adinacion"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_adinacion"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_adinacion" visible="false"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="estado"/>
+          </Compare>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" caption="Resultados" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="evaluacion" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Evaluación Resultados" showKeyColumnsImagesInGridHeader="false" tableName="public.evaluacion" type="table" useActionImages="true" viewAbilityMode="0">
+        <BeforeGridText/>
+        <DetailedDescription>
+En esta prestaña se asigara a cada docente, los proyectos correspondientes para su evaluación        </DetailedDescription>
+        <ColumnPresentations>
+          <ColumnPresentation canSetNull="true" caption="Evaluador" fieldName="id_evaluador" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="nombre_eva" linkFieldName="id_evaluador" lookupFilter="" lookupOrdering="0" tableName="public.evaluadores" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties type="autocompleteEdit"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Presentación" fieldName="presentacion" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Evaluacion" fieldName="id_evaluacion" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Tiempo" fieldName="tiempo" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Coherencia Metodología" fieldName="coherencia_met" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Claridad" fieldName="claridad" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Diapositiva" fieldName="diapositiva" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Video" fieldName="video" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="Conclusiones" fieldName="conclusiones" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </List>
+          <View>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_evaluador" visible="false"/>
+            <Column fieldName="id_proyecto" visible="false"/>
+            <Column fieldName="presentacion" visible="false"/>
+            <Column fieldName="id_evaluacion" visible="false"/>
+            <Column fieldName="tiempo" visible="false"/>
+            <Column fieldName="coherencia_met" visible="false"/>
+            <Column fieldName="claridad" visible="false"/>
+            <Column fieldName="diapositiva" visible="false"/>
+            <Column fieldName="video" visible="false"/>
+            <Column fieldName="conclusiones" visible="false"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_evaluador"/>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="presentacion"/>
+            <Column fieldName="id_evaluacion"/>
+            <Column fieldName="tiempo"/>
+            <Column fieldName="coherencia_met"/>
+            <Column fieldName="claridad"/>
+            <Column fieldName="diapositiva"/>
+            <Column fieldName="video"/>
+            <Column fieldName="conclusiones"/>
+          </Compare>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+        <Charts>
+          <Chart domainColumnLabel="nombre_proyecto" domainColumnName="nombre_proyecto" domainColumnType="string" name="resultado" title="grafica" type="0">
+            <DataColumns>
+              <Column label="Puntuación" name="promedio" type="int"/>
+            </DataColumns>
+            <SelectStatement>
+SELECT 
+  proyectos.nombre_proyecto, 
+  ((evaluacion.presentacion  + evaluacion.tiempo + evaluacion.coherencia_met + evaluacion.claridad + 
+  evaluacion.diapositiva + evaluacion.video + evaluacion.conclusiones)/7)as promedio
+FROM 
+  public.evaluacion, 
+  public.proyectos
+WHERE 
+  proyectos.id_proyecto = evaluacion.id_proyecto            </SelectStatement>
+          </Chart>
+        </Charts>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Puestos" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="puestos" highlightRowOnMouseHover="true" horizontalFilterCondition="" includedIntoPageList="false" insertAbilityMode="3" numberByDataSource="0" pageViewMode="1" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Puestos" showKeyColumnsImagesInGridHeader="false" tableName="public.puestos" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="ID Puestos" fieldName="id_puestos" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Puesto" fieldName="puesto" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_puestos" visible="false"/>
+            <Column fieldName="puesto"/>
+          </List>
+          <View>
+            <Column fieldName="id_puestos" visible="false"/>
+            <Column fieldName="puesto"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_puestos" visible="false"/>
+            <Column fieldName="puesto"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_puestos" visible="false"/>
+            <Column fieldName="puesto"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_puestos"/>
+            <Column fieldName="puesto"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_puestos"/>
+            <Column fieldName="puesto"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_puestos"/>
+            <Column fieldName="puesto"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_puestos"/>
+            <Column fieldName="puesto"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_puestos" visible="false"/>
+            <Column fieldName="puesto"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Ganadores Feria">
+            <Page NavigatorPosition="3" addSeparator="false" caption="Ganadores Feria" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="ganadores_feria" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Ganadores Feria" showKeyColumnsImagesInGridHeader="false" tableName="public.ganadores_feria" type="table" useActionImages="true" viewAbilityMode="0">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Puestos" fieldName="id_puestos" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="puesto" linkFieldName="id_puestos" lookupFilter="" lookupOrdering="0" tableName="public.puestos" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </List>
+                <View>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="id_puestos"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_puestos" masterColumnName="id_puestos"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="User Student" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="user_student" highlightRowOnMouseHover="true" horizontalFilterCondition="" includedIntoPageList="false" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="User Student" showKeyColumnsImagesInGridHeader="false" tableName="public.user_student" type="table" useActionImages="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="Id User" fieldName="id_user" selectedFilterOperators="1573119" showColumnFilter="false">
+            <ViewProperties type="text">
+              <Format thousandSeparator="," type="number"/>
+            </ViewProperties>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="User Nombres" fieldName="user_nombres" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation canSetNull="true" caption="User Password" fieldName="user_password" selectedFilterOperators="1589247" showColumnFilter="false">
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </List>
+          <View>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_user"/>
+            <Column fieldName="user_nombres"/>
+            <Column fieldName="user_password"/>
+          </Compare>
+        </Columns>
+        <Details>
+          <Detail caption="Proyectos">
+            <Page NavigatorPosition="3" addSeparator="false" advancedSearchAvailable="false" caption="Proyectos" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="proyectos" highlightRowOnMouseHover="true" horizontalFilterCondition="" insertAbilityMode="3" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Proyectos" showKeyColumnsImagesInGridHeader="false" tableName="public.proyectos" type="table" useActionImages="true">
+              <BeforeGridText/>
+              <DetailedDescription/>
+              <ColumnPresentations>
+                <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1573119" showColumnFilter="false">
+                  <ViewProperties type="text">
+                    <Format thousandSeparator="," type="number"/>
+                  </ViewProperties>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Nombre Proyecto" fieldName="nombre_proyecto" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Descripcion" fieldName="descripcion" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Fecha Publicacion" fieldName="fecha_publicacion" selectedFilterOperators="2031871">
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties dateTimeFormat="Y-m-d h:i:s a" firstDayOfWeek="0" type="dateTime"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id Categoria" fieldName="id_categoria" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="descripcion" linkFieldName="id_categoria" lookupFilter="" lookupOrdering="0" tableName="public.categoria" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Doc" fieldName="url_doc" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Video" fieldName="url_video" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Url Anexos" fieldName="url_anexos" selectedFilterOperators="1589247" showColumnFilter="false">
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation caption="Id Feria" fieldName="id_feria" selectedFilterOperators="2031871">
+                  <Lookup displayFieldName="fecha" linkFieldName="id_feria" lookupFilter="" lookupOrdering="0" tableName="public.ferias" useLookupOrdering="true"/>
+                  <ViewProperties dateTimeFormat="Y-m-d h:i:s a" type="dateTime"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+                <ColumnPresentation canSetNull="true" caption="Id User" fieldName="id_user" selectedFilterOperators="1589247">
+                  <Lookup displayFieldName="user_nombres" linkFieldName="id_user" lookupFilter="" lookupOrdering="0" tableName="public.user_student" useLookupOrdering="true"/>
+                  <ViewProperties type="text"/>
+                  <EditProperties maxLength="0" type="textBox"/>
+                </ColumnPresentation>
+              </ColumnPresentations>
+              <Columns>
+                <List>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </List>
+                <View>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </View>
+                <Edit>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Edit>
+                <Insert>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Insert>
+                <QuickFilter>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </QuickFilter>
+                <FilterBuilder>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </FilterBuilder>
+                <Print>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Print>
+                <Export>
+                  <Column fieldName="id_proyecto"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Export>
+                <Compare>
+                  <Column fieldName="id_proyecto" visible="false"/>
+                  <Column fieldName="nombre_proyecto"/>
+                  <Column fieldName="descripcion"/>
+                  <Column fieldName="fecha_publicacion"/>
+                  <Column fieldName="id_categoria"/>
+                  <Column fieldName="url_doc"/>
+                  <Column fieldName="url_video"/>
+                  <Column fieldName="url_anexos"/>
+                  <Column fieldName="id_feria"/>
+                  <Column fieldName="id_user"/>
+                </Compare>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap foreginColumnName="id_user" masterColumnName="id_user"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page NavigatorPosition="3" addSeparator="false" caption="Ganadores Feria" contentEncoding="UTF-8" copyAbilityMode="0" editAbilityMode="0" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" fileName="ganadores_feria" highlightRowOnMouseHover="true" horizontalFilterCondition="" includedIntoPageList="false" insertAbilityMode="0" numberByDataSource="0" printerFriendlyAvailable2="5" recordsPerPage="20" shortCaption="Ganadores Feria" showKeyColumnsImagesInGridHeader="false" tableName="public.ganadores_feria" type="table" useActionImages="true" viewAbilityMode="0">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation caption="Id Proyecto" fieldName="id_proyecto" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="nombre_proyecto" linkFieldName="id_proyecto" lookupFilter="" lookupOrdering="0" tableName="public.proyectos" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation caption="Id Puestos" fieldName="id_puestos" selectedFilterOperators="1589247">
+            <Lookup displayFieldName="puesto" linkFieldName="id_puestos" lookupFilter="" lookupOrdering="0" tableName="public.puestos" useLookupOrdering="true"/>
+            <ViewProperties type="text"/>
+            <EditProperties maxLength="0" type="textBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </List>
+          <View>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_proyecto"/>
+            <Column fieldName="id_puestos"/>
+          </Compare>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization allowUserToChangePassword="false" passwordEncryption="MD5" passwordField="user_password" tableName="public.user_student" type="tableBased" userIdField="id_user" userNameField="user_nombres"/>
+    <UserGrants enableGuestAccess="false" storageType="table">
+      <UserGrantsStorage userPermsAcl="perm_name" userPermsPageName="page_name" userPermsTableName="public.phpgen_user_perms" userPermsUserId="user_id"/>
+    </UserGrants>
+    <Header/>
+    <Footer/>
+    <PHPOptions/>
+    <Groups>
+      <Group caption="No group"/>
+    </Groups>
+    <outgoingMailSettings fromEmail="" fromName="" mailer="0"/>
+  </Presentation>
+  <UserCSS/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties NavigatorPosition="3" advancedSearchAvailable="false" contentEncoding="UTF-8" copyAbilityMode="0" deleteAbilityMode="3" exportToCsvAvailable2="5" exportToExcelAvailable2="5" exportToPdfAvailable2="5" exportToWordAvailable2="5" exportToXmlAvailable2="5" highlightRowOnMouseHover="true" insertAbilityMode="3" printerFriendlyAvailable2="5" recordsPerPage="20" showKeyColumnsImagesInGridHeader="false" useActionImages="true"/>
+  <DefaultDataFormats DateFormat="Y-m-d" DateTimeFormat="Y-m-d h:i:s a" DecimalSeparator="." ThousandSeparator="," firstDayOfWeek="0" getStringForDisplayingNullsFromLocalizationFile="false" nullLabel=" - " numberAfterDecimal="2"/>
+  <ConnectionOptions host="localhost" port="5432" login="postgres" password="" database="repository" client_encoding="">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication login="pdmusta" password="[/WT_?OWJJBIK0~~"/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="localhost" port="5432" login="postgres" password="" database="repository" client_encoding="">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication login="pdmusta" password="[/WT_?OWJJBIK0~~"/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <Queries/>
+</Project>

@@ -1,0 +1,29 @@
+<?php
+include("../conexion.php");
+$ext=0;
+$fecha=date("Y/m/d");
+$hora=$_POST['hora'];
+$sitioorg=$_POST['origen'];
+$sitiodes=$_POST['destino'];
+$idcli=$_POST['idcli'];
+$modo=$_POST['modo'];
+$estado=0;
+$cupos=$_POST['cupos'];
+$tipo_plan=0;
+$diasem=0;
+$costo=0;
+$idclis='';
+if($conn){
+    $cadsql="insert into plan_viaje 
+             (fecha,hora_salida,id_sitio,id_cliente,modo_viaje,estado,
+              cupos,id_sitio_destino,tipo_plan,dia_semana,costo,
+              id_cliente_sol)
+             values('$fecha','$hora',$sitioorg,'$idcli',$modo,
+                    $estado,$cupos,$sitiodes,$tipo_plan,
+                    $diasem,$costo,'$idclis')";
+    $rs=pg_query($conn,$cadsql);
+    $ext=1;
+}
+echo $ext;
+header("location:viajeinmediato.php") 
+?>
